@@ -8,7 +8,7 @@ class Commands(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def reacttionmessage(self, ctx):
+    async def reactionmessage(self, ctx):
         '''Sends a message you can react to'''
         bot_message = await ctx.send('Moin')
         con = create_database_connection('active_messages.sqlite')
